@@ -1,0 +1,95 @@
+{
+  "brand": {
+    "name": "+Seven",
+    "tagline": "Orientações Educacionais e Empresariais",
+    "whatsapp": "5554981112788",
+    "whatsappDisplay": "(54) 98111-2788",
+    "email": "contato@maisseven.com.br",
+    "instagram": "@maisseven"
+  },
+  "hero": {
+    "eyebrow": "CONSULTORIA E FORMAÇÕES",
+    "titleStart": "Consultoria e formações para escolas, MEIs e MPEs crescerem com",
+    "titleHighlight": "clareza, propósito e resultado.",
+    "description": "Educação, gestão e estratégia para transformar realidades.",
+    "primaryCta": "Agende seu diagnóstico",
+    "secondaryCta": "Fale no WhatsApp"
+  },
+  "solutions": [
+    {
+      "icon": "education",
+      "title": "Educação",
+      "description": "Soluções educacionais inclusivas e antirracistas."
+    },
+    {
+      "icon": "business",
+      "title": "Empresas",
+      "description": "Estratégia e gestão para MEIs, MPEs e equipes."
+    },
+    {
+      "icon": "training",
+      "title": "Formações",
+      "description": "Capacitações práticas para transformar pessoas e realidades."
+    },
+    {
+      "icon": "method",
+      "title": "Método +Seven",
+      "description": "Clareza, propósito e acompanhamento para resultados consistentes."
+    }
+  ],
+  "education": {
+    "eyebrow": "EDUCAÇÃO",
+    "title": "Educação que transforma com equidade e propósito.",
+    "items": [
+      "Formação docente",
+      "Educação antirracista",
+      "Cultura afro-brasileira e indígena",
+      "Leis 10.639/03 e 11.645/08",
+      "Materiais pedagógicos prontos",
+      "Projetos e oficinas"
+    ]
+  },
+  "business": {
+    "eyebrow": "EMPRESAS",
+    "title": "Estratégia e gestão para negócios crescerem de forma sustentável.",
+    "items": [
+      "Organização de processos",
+      "Planejamento estratégico",
+      "Planejamento comercial",
+      "Desenvolvimento de equipes",
+      "Crescimento com clareza"
+    ]
+  },
+  "materials": [
+    "Guias e e-books",
+    "Apostilas",
+    "Apresentações",
+    "Planos de aula",
+    "Modelos prontos",
+    "Recursos aplicáveis"
+  ],
+  "pillars": [
+    "Clareza",
+    "Educação inclusiva",
+    "Estratégia",
+    "Acompanhamento"
+  ],
+  "faq": [
+    {
+      "question": "Como a +Seven atua na educação antirracista?",
+      "answer": "Apoiamos escolas com formações, materiais e projetos alinhados às Leis 10.639/03 e 11.645/08, valorizando identidade, respeito e pertencimento."
+    },
+    {
+      "question": "Como funciona o diagnóstico inicial?",
+      "answer": "Começamos com uma conversa para compreender a realidade, identificar prioridades e indicar os próximos passos mais adequados."
+    },
+    {
+      "question": "As formações podem ser presenciais ou online?",
+      "answer": "Sim. O formato é definido conforme o tema, o público e a necessidade da instituição ou empresa."
+    },
+    {
+      "question": "A +Seven atende escolas, MEIs e MPEs?",
+      "answer": "Sim. As soluções são personalizadas para instituições de ensino, educadores, pequenos negócios e equipes."
+    }
+  ]
+}
