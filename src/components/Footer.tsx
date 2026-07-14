@@ -16,19 +16,19 @@ export function Footer() {
         </div>
         <div>
           <h3>Navegação</h3>
-          <a href="#inicio">Início</a>
-          <a href="#solucoes">Soluções</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#conteudos">Conteúdos</a>
-          <a href="#contato">Contato</a>
+          <a href="/">Início</a>
+          <a href="/solucoes">Soluções</a>
+          <a href="/sobre">Sobre</a>
+          <a href="/conteudos">Conteúdos</a>
+          <a href="/contato">Contato</a>
         </div>
         <div>
           <h3>Soluções</h3>
-          <a href="#solucoes">Educação</a>
-          <a href="#solucoes">Empresas</a>
-          <a href="#solucoes">Formações</a>
-          <a href="#solucoes">Método +Seven</a>
-          <a href="#conteudos">Materiais</a>
+          <a href="/solucoes#educacao">Educação</a>
+          <a href="/solucoes#empresas">Empresas</a>
+          <a href="/solucoes#formacoes">Formações</a>
+          <a href="/solucoes#metodo">Método +Seven</a>
+          <a href="/conteudos">Materiais</a>
         </div>
         <div>
           <h3>Contato</h3>

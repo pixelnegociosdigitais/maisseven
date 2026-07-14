@@ -17,7 +17,7 @@ export function Hero() {
           </h1>
           <p>{content.hero.description}</p>
           <div className="hero-actions">
-            <a className="button button--primary" href="#contato">
+            <a className="button button--primary" href="/contato?assunto=diagnostico">
               {content.hero.primaryCta} <Icon name="arrow" size={19} />
             </a>
             <a className="button button--secondary" href={whatsapp} target="_blank" rel="noreferrer">
@@ -52,7 +52,7 @@ export function Hero() {
             </svg>
           </div>
           <div className="hero-image-shell">
-            <img src="./assets/images/hero-team-laptop.jpg" alt="Equipe diversa reunida em torno de um notebook durante uma conversa estratégica" />
+            <img src="/assets/images/hero-team-laptop.jpg" alt="Equipe diversa reunida em torno de um notebook durante uma conversa estratégica" />
           </div>
           <div className="hero-visual__glow" />
         </div>

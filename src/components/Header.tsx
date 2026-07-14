@@ -3,14 +3,18 @@ import { BrandLogo } from './BrandLogo'
 import { Icon } from './Icon'
 
 const navItems = [
-  ['Início', '#inicio'],
-  ['Soluções', '#solucoes'],
-  ['Sobre', '#sobre'],
-  ['Conteúdos', '#conteudos'],
-  ['Contato', '#contato'],
+  ['Início', '/'],
+  ['Soluções', '/solucoes'],
+  ['Sobre', '/sobre'],
+  ['Conteúdos', '/conteudos'],
+  ['Contato', '/contato'],
 ]
 
-export function Header() {
+interface HeaderProps {
+  pathname: string
+}
+
+export function Header({ pathname }: HeaderProps) {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
@@ -27,12 +31,12 @@ export function Header() {
           <Icon name={open ? 'close' : 'menu'} />
         </button>
         <nav className={`main-nav ${open ? 'main-nav--open' : ''}`} aria-label="Navegação principal">
-          {navItems.map(([label, href], index) => (
-            <a key={href} className={index === 0 ? 'is-active' : ''} href={href} onClick={() => setOpen(false)}>
+          {navItems.map(([label, href]) => (
+            <a key={href} className={pathname === href ? 'is-active' : ''} href={href} onClick={() => setOpen(false)}>
               {label}
             </a>
           ))}
-          <a className="button button--primary header-cta" href="#contato" onClick={() => setOpen(false)}>
+          <a className="button button--primary header-cta" href="/contato?assunto=diagnostico" onClick={() => setOpen(false)}>
             Agende seu diagnóstico <Icon name="arrow" size={18} />
           </a>
         </nav>

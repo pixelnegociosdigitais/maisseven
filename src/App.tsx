@@ -1,42 +1,54 @@
-import content from './content/site-content.json'
-import { ContactCta } from './components/ContactCta'
-import { Faq } from './components/Faq'
-import { FeatureSplit } from './components/FeatureSplit'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
-import { Hero } from './components/Hero'
-import { Materials } from './components/Materials'
-import { SolutionGrid } from './components/SolutionGrid'
 import { WhatsAppButton } from './components/WhatsAppButton'
+import { AboutPage } from './pages/AboutPage'
+import { ContactPage } from './pages/ContactPage'
+import { ContentPage } from './pages/ContentPage'
+import { HomePage } from './pages/HomePage'
+import { SolutionsPage } from './pages/SolutionsPage'
+
+function normalizePath(pathname: string) {
+  if (pathname.length > 1 && pathname.endsWith('/')) return pathname.slice(0, -1)
+  return pathname
+}
 
 export default function App() {
+  const pathname = normalizePath(window.location.pathname)
+  let page
+
+  switch (pathname) {
+    case '/':
+      page = <HomePage />
+      break
+    case '/solucoes':
+      page = <SolutionsPage />
+      break
+    case '/sobre':
+      page = <AboutPage />
+      break
+    case '/conteudos':
+      page = <ContentPage />
+      break
+    case '/contato':
+      page = <ContactPage />
+      break
+    default:
+      page = (
+        <section className="not-found section">
+          <div className="container glass-panel">
+            <span className="eyebrow">PÁGINA NÃO ENCONTRADA</span>
+            <h1>O caminho que você procurou não está disponível.</h1>
+            <p>Volte à página inicial ou fale com a +Seven.</p>
+            <a className="button button--primary" href="/">Voltar ao início</a>
+          </div>
+        </section>
+      )
+  }
+
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-        <SolutionGrid />
-        <FeatureSplit
-          id="educacao"
-          eyebrow={content.education.eyebrow}
-          title={content.education.title}
-          items={content.education.items}
-          image="./assets/images/education-classroom.jpg"
-          imageAlt="Professora em sala de aula com estudantes"
-        />
-        <FeatureSplit
-          id="empresas"
-          eyebrow={content.business.eyebrow}
-          title={content.business.title}
-          items={content.business.items}
-          image="./assets/images/business-strategy.jpg"
-          imageAlt="Equipe analisando um planejamento estratégico"
-          reverse
-        />
-        <Materials />
-        <Faq />
-        <ContactCta />
-      </main>
+      <Header pathname={pathname} />
+      <main>{page}</main>
       <Footer />
       <WhatsAppButton />
     </>
